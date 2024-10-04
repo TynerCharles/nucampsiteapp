@@ -5,7 +5,6 @@ import { CAMPSITES } from '../shared/campsites';
 
 const DirectoryScreen = ({ navigation }) => {
     const [campsites, setCampsites] = useState(CAMPSITES);
-
     const renderDirectoryItem = ({ item: campsite }) => {
         return (
             <ListItem onPress={() => navigation.navigate('CampsiteInfo', { campsite })}>
@@ -21,11 +20,11 @@ const DirectoryScreen = ({ navigation }) => {
     }
 
     return (
-        <FlatList 
-            date={campsites}
+        <FlatList
+            data={campsites}
             renderItem={renderDirectoryItem}
             keyExtractor={(item) => item.id.toString()}
-        />
+        /> 
     );
 };
 
