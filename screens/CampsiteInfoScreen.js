@@ -39,14 +39,14 @@ const CampsiteInfoScreen = ({ route }) => {
     const renderCommentItem = ({ item }) => {
         return (
             <View style={styles.commentItem}>
-                <Text style={{ fonstSize: 14 }}>{item.text}</Text>
+                <Text style={{ fontSize: 14 }}>{item.text}</Text>
                 <Rating 
                     startingValue={item.rating}
                     imageSize={10}
                     style={{alignItems: 'flex-start', paddingVertical: '5%'}}
                     readonly
                 />
-                <Text style={{ fonstSize: 12 }}>
+                <Text style={{ fontSize: 12 }}>
                     {`-- ${item.author}, ${item.date}`}
                 </Text>
 
