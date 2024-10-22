@@ -43,7 +43,7 @@ const LoginScreen = () => {
         <View style={styles.container}>
             <Input 
                 placeholder='Username'
-                leftIcon={{type: 'fontawesome', name: 'user-o'}}
+                leftIcon={{type: 'font-awesome', name: 'user-o'}}
                 onChangeText={(text) => setUsername(text)}
                 value={username}
                 containerStyle={styles.formInput}
@@ -51,7 +51,7 @@ const LoginScreen = () => {
             />
             <Input 
                 placeholder='Password'
-                leftIcon={{type: 'fontawesome', name: 'key'}}
+                leftIcon={{type: 'font-awesome', name: 'key'}}
                 onChangeText={(text) => setPassword(text)}
                 value={password}
                 containerStyle={styles.formInput}
