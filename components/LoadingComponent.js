@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     },
     loadingText: {
         color: '#5637DD',
-        fonSize: 14,
+        fontSize: 14,
         fontWeight: 'bold'
     }
 
